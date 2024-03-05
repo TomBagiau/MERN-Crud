@@ -4,9 +4,13 @@ if(process.env.NODE_ENV != 'production'){
 }
 
 const express = require('express');
+const dbConnect = require('./config/dbConnect');
 
 //Create express app
 const app = express();
+
+//connect to Db
+dbConnect()
 
 //Routing 
 app.get('/', (req, res) => {
