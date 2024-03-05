@@ -4,6 +4,7 @@ if(process.env.NODE_ENV != 'production'){
 }
 
 const express = require('express');
+const cors = require('cors');
 const dbConnect = require('./config/dbConnect');
 const notesController = require('./controllers/notesController')
 
@@ -12,6 +13,7 @@ const app = express();
 
 //Configure express
 app.use(express.json())
+app.use(cors())
 
 //Connect to Db
 dbConnect()
