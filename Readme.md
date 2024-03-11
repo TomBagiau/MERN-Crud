@@ -11,4 +11,11 @@ Créer un .env dans le dossier server
 - Ajouter une variable DB_URL avec la connexion à mongoDb
 
 ### Lancement
-- Commande : npm run dev
+- npm install
+- npm run dev
+
+# Client
+
+### Lancement
+- npm install
+- npm start
